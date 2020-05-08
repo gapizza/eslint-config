@@ -7,7 +7,7 @@ module.exports = {
     node: true,
     mocha: true,
   },
-  plugins: ['sonarjs', 'mocha', 'lodash', "no-secrets"],
+  plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets'],
   parserOptions: {
     ecmaVersion: 9,
   },
@@ -27,7 +27,10 @@ module.exports = {
     'prettier/unicorn',
   ],
   rules: {
-    'import/no-extraneous-dependencies': ['warn', { devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'] }],
+    'import/no-extraneous-dependencies': [
+      'warn',
+      { devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'] },
+    ],
     'arrow-parens': ['error', 'always'],
     'callback-return': 'error',
     camelcase: 'warn',
@@ -109,6 +112,6 @@ module.exports = {
     'unicorn/consistent-function-scoping': 'off',
     'unicorn/prevent-abbreviations': 'off',
 
-    "no-secrets/no-secrets":"error"
+    'no-secrets/no-secrets': 'error',
   },
 };
