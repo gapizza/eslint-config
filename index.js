@@ -111,6 +111,8 @@ module.exports = {
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
     'unicorn/consistent-function-scoping': 'off',
     'unicorn/prevent-abbreviations': 'off',
+    'unicorn/no-null': 'off', // Interesting: https://github.com/sindresorhus/meta/issues/7, but need null for Firebase
+    'unicorn/no-fn-reference-in-iterator': 'off', // This is a dumb rule, hopefully they remove it
 
     'no-secrets/no-secrets': 'error',
   },
