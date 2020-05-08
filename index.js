@@ -7,7 +7,7 @@ module.exports = {
     node: true,
     mocha: true,
   },
-  plugins: ['sonarjs', 'mocha', 'lodash'],
+  plugins: ['sonarjs', 'mocha', 'lodash', "no-secrets"],
   parserOptions: {
     ecmaVersion: 9,
   },
@@ -22,16 +22,16 @@ module.exports = {
     'plugin:lodash/recommended',
     'plugin:mocha/recommended',
     'plugin:unicorn/recommended',
+    'plugin:jsdoc/recommended',
     'prettier',
+    'prettier/unicorn',
   ],
-  globals: {
-    xjq: false,
-  },
   rules: {
-    // 'array-callback-return': 'off',
+    'import/no-extraneous-dependencies': ['warn', { devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'] }],
     'arrow-parens': ['error', 'always'],
     'callback-return': 'error',
     camelcase: 'warn',
+    'no-continue': 'off',
     'capitalized-comments': 'error',
     'handle-callback-err': 'error',
     'max-depth': ['error', 3],
@@ -64,23 +64,15 @@ module.exports = {
     quotes: ['warn', 'single'],
     'quote-props': ['error', 'as-needed'],
     strict: ['error', 'global'],
-    'valid-jsdoc': [
-      'error',
-      {
-        requireReturnDescription: false,
-        requireParamDescription: false,
-      },
-    ],
-    'require-jsdoc': [
-      'error',
-      {
-        require: {
-          MethodDefinition: true,
-          ClassDeclaration: true,
-        },
-      },
-    ],
 
+    // JSdoc
+    'valid-jsdoc': 'off',
+    'require-jsdoc': 'off',
+    'jsdoc/require-param-description': 'off',
+    'jsdoc/require-returns-description': 'off',
+    'jsdoc/no-undefined-types': 'off',
+
+    // Mocha
     'mocha/handle-done-callback': 'error',
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-global-tests': 'error',
@@ -92,6 +84,7 @@ module.exports = {
     'mocha/no-mocha-arrows': 'off',
     'mocha/no-hooks-for-single-case': 'off',
 
+    // Lodash
     'lodash/prefer-constant': 'off',
     'lodash/prefer-lodash-method': 'off',
     'lodash/preferred-alias': 'off',
@@ -115,5 +108,7 @@ module.exports = {
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
     'unicorn/consistent-function-scoping': 'off',
     'unicorn/prevent-abbreviations': 'off',
+
+    "no-secrets/no-secrets":"error"
   },
 };
