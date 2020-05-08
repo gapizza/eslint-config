@@ -70,7 +70,15 @@ module.exports = {
 
     // JSdoc
     'valid-jsdoc': 'off',
-    'require-jsdoc': 'off',
+    'require-jsdoc': [
+      'error',
+      {
+        require: {
+          MethodDefinition: true,
+          ClassDeclaration: true,
+        },
+      },
+    ],
     'jsdoc/require-param-description': 'off',
     'jsdoc/require-returns-description': 'off',
     'jsdoc/no-undefined-types': 'off',
