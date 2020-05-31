@@ -115,6 +115,7 @@ module.exports = {
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
     'unicorn/no-fn-reference-in-iterator': 'off',
     'unicorn/no-null': 'off',
+    'unicorn/no-reduce': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'valid-jsdoc': 'off',
   },
