@@ -71,6 +71,7 @@ module.exports = {
     'max-nested-callbacks': ['error', 5],
     'max-params': ['error', 5],
     'mocha/handle-done-callback': 'error',
+    'mocha/max-top-level-suites': 'off',
     'mocha/no-exclusive-tests': 'error',
     'mocha/no-global-tests': 'error',
     'mocha/no-hooks-for-single-case': 'off',
