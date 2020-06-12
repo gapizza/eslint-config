@@ -117,6 +117,7 @@ module.exports = {
     'unicorn/no-fn-reference-in-iterator': 'off',
     'unicorn/no-null': 'off',
     'unicorn/no-reduce': 'off',
+    'unicorn/no-useless-undefined': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'valid-jsdoc': 'off',
   },
