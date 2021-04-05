@@ -113,6 +113,7 @@ module.exports = {
     strict: ['error', 'global'],
     'unicorn/consistent-function-scoping': 'off',
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
+    'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-fn-reference-in-iterator': 'off',
     'unicorn/no-null': 'off',
     'unicorn/no-reduce': 'off',
