@@ -18,7 +18,6 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:jsdoc/recommended',
     'prettier',
-    'prettier/unicorn',
   ],
   overrides: [
     {

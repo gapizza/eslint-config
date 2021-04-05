@@ -6,8 +6,7 @@
     "airbnb-base",
     "plugin:prettier/recommended",
     "plugin:unicorn/recommended",
-    "prettier",
-    "prettier/unicorn"
+    "prettier"
   ],
   "rules": {
     "sort-keys-fix/sort-keys-fix": "error"
