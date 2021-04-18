@@ -1,7 +1,7 @@
 {
   "name": "@gapizza/eslint-config",
   "description": "General purpose Node ESLint configuration",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "author": "Eric Hacke",
   "bugs": {
     "url": "https://github.com/gapizza/eslint-config/issues"
