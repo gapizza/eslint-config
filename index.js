@@ -16,7 +16,6 @@ module.exports = {
     'plugin:lodash/recommended',
     'plugin:mocha/recommended',
     'plugin:unicorn/recommended',
-    'plugin:jsdoc/recommended',
     'prettier',
   ],
   overrides: [
@@ -44,9 +43,6 @@ module.exports = {
       { devDependencies: ['**/*.test.{js,ts}', '**/*.spec.{js,ts}', '**/*.unit.{js,ts}', '**/*.it.{js,ts}', 'tests/**/*', 'test/**/*'] },
     ],
     'import/prefer-default-export': 'off',
-    'jsdoc/no-undefined-types': 'off',
-    'jsdoc/require-param-description': 'off',
-    'jsdoc/require-returns-description': 'off',
     'lodash/import-scope': ['error', 'member'],
     'lodash/prefer-constant': 'off',
     'lodash/prefer-includes': 'off',
@@ -100,15 +96,7 @@ module.exports = {
     'promise/catch-or-return': 'off',
     'quote-props': ['error', 'as-needed'],
     quotes: ['warn', 'single'],
-    'require-jsdoc': [
-      'error',
-      {
-        require: {
-          ClassDeclaration: true,
-          MethodDefinition: true,
-        },
-      },
-    ],
+    'require-jsdoc': 'off',
     'sonarjs/no-duplicate-string': 'off',
     strict: ['error', 'global'],
     'unicorn/consistent-function-scoping': 'off',
