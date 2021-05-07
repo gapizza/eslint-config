@@ -23,6 +23,10 @@
     "prettier": "^2.2.1",
     "prettier-eslint-cli": "^5.0.1"
   },
+  "engineStrict": true,
+  "engines": {
+    "npm": "~7.0.0"
+  },
   "files": [
     "*.js",
     "!scratch.*"
