@@ -9,6 +9,7 @@
     "prettier"
   ],
   "rules": {
-    "sort-keys-fix/sort-keys-fix": "error"
+    "sort-keys-fix/sort-keys-fix": "error",
+    "unicorn/prefer-module": "off"
   }
 }
