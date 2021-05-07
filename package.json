@@ -1,7 +1,7 @@
 {
   "name": "@gapizza/eslint-config",
   "description": "General purpose Node ESLint configuration",
-  "version": "1.2.0",
+  "version": "1.2.1-2",
   "author": "Eric Hacke",
   "bugs": {
     "url": "https://github.com/gapizza/eslint-config/issues"
@@ -11,7 +11,33 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {
+  "devDependencies": {
+    "@gapizza/commitlint-config": "^1.0.1",
+    "@gapizza/prettier-config": "^1.0.1",
+    "commitizen": "^4.2.3",
+    "commitlint": "^12.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "7.25.0",
+    "fixpack": "^4.0.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.2.1",
+    "prettier-eslint-cli": "^5.0.1"
+  },
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "files": [
+    "*.js",
+    "!scratch.*"
+  ],
+  "homepage": "https://github.com/gapizza/eslint-config#readme",
+  "keywords": [
+    "eslint"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-compat": "^3.9.0",
@@ -32,28 +58,6 @@
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "eslint-plugin-unicorn": "^31.0.0"
   },
-  "devDependencies": {
-    "@gapizza/commitlint-config": "^1.0.1",
-    "@gapizza/prettier-config": "^1.0.1",
-    "commitizen": "^4.2.3",
-    "commitlint": "^12.1.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "7.25.0",
-    "fixpack": "^4.0.0",
-    "husky": "^6.0.0",
-    "prettier": "^2.2.1",
-    "prettier-eslint-cli": "^5.0.1"
-  },
-  "files": [
-    "*.js",
-    "!scratch.*"
-  ],
-  "homepage": "https://github.com/gapizza/eslint-config#readme",
-  "keywords": [
-    "eslint"
-  ],
-  "license": "MIT",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gapizza/eslint-config.git"
