@@ -14,10 +14,10 @@
   "devDependencies": {
     "@gapizza/commitlint-config": "^1.0.1",
     "@gapizza/prettier-config": "^1.0.1",
-    "commitizen": "^4.2.3",
+    "commitizen": "^4.2.4",
     "commitlint": "^12.1.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "7.25.0",
+    "eslint": "^7.26.0",
     "fixpack": "^4.0.0",
     "husky": "^6.0.0",
     "prettier": "^2.2.1",
