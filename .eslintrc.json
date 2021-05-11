@@ -10,6 +10,7 @@
   ],
   "rules": {
     "sort-keys-fix/sort-keys-fix": "error",
-    "unicorn/prefer-module": "off"
+    "unicorn/prefer-module": "off",
+    "unicorn/prefer-node-protocol": "off"
   }
 }
