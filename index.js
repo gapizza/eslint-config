@@ -109,6 +109,7 @@ module.exports = {
     'unicorn/no-reduce': 'off',
     'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-module': 'off',
+    'unicorn/prefer-node-protocol': 'off',
     'unicorn/prefer-ternary': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'valid-jsdoc': 'off',
