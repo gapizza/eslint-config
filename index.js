@@ -27,7 +27,7 @@ module.exports = {
     },
   ],
   parserOptions: {
-    ecmaVersion: 9,
+    ecmaVersion: 11,
   },
   plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets', 'sort-keys-fix'],
   rules: {
