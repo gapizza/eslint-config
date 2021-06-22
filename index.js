@@ -89,6 +89,7 @@ module.exports = {
     'no-plusplus': 'off',
     'no-process-env': 'error',
     'no-process-exit': 'error',
+    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-secrets/no-secrets': 'error',
     'no-underscore-dangle': 'off',
     'no-useless-call': 'error',
