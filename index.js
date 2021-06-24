@@ -29,7 +29,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
   },
-  plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets', 'sort-keys-fix'],
+  plugins: ['sonarjs', 'mocha', 'lodash', 'no-secrets', 'sort-keys-fix', 'prefer-arrow'],
   rules: {
     'arrow-parens': ['error', 'always'],
     'callback-return': 'error',
@@ -93,6 +93,8 @@ module.exports = {
     'no-secrets/no-secrets': 'error',
     'no-underscore-dangle': 'off',
     'no-useless-call': 'error',
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
+    'prefer-arrow/prefer-arrow-functions': 'error',
     'promise/always-return': 'off',
     'promise/catch-or-return': 'error',
     'quote-props': ['error', 'as-needed'],

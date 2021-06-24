@@ -50,6 +50,7 @@
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-optimize-regex": "^1.2.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
