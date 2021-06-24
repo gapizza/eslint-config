@@ -94,7 +94,14 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-useless-call': 'error',
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
-    'prefer-arrow/prefer-arrow-functions': 'error',
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        classPropertiesAllowed: true,
+        disallowPrototype: true,
+        singleReturnOnly: true,
+      },
+    ],
     'promise/always-return': 'off',
     'promise/catch-or-return': 'error',
     'quote-props': ['error', 'as-needed'],
