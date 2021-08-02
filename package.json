@@ -86,6 +86,6 @@
     "preversion": "npm run lint",
     "tag": "git stash && git tag v\"$(npm view @gapizza/eslint-config version)\" && git push origin --tags",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update:packageVersion": "cat package.json | jq \".version = \\\"$(npm view @gapizza/models version)\\\"\" > package.json"
+    "update:packageVersion": "cat package.json | jq \".version = \\\"$(npm view @gapizza/eslint-config version)\\\"\" > package.json"
   }
 }
