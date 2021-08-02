@@ -98,9 +98,10 @@ module.exports = {
     'prefer-arrow/prefer-arrow-functions': [
       'error',
       {
-        classPropertiesAllowed: true,
-        disallowPrototype: true,
-        singleReturnOnly: true,
+        classPropertiesAllowed: false,
+        disallowPrototype: false,
+        returnStyle: 'implicit',
+        singleReturnOnly: false,
       },
     ],
     'promise/always-return': 'off',
