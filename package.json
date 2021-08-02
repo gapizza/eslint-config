@@ -36,6 +36,15 @@
     "eslint"
   ],
   "license": "MIT",
+  "lint-staged": {
+    "./package.json": [
+      "fixpack"
+    ],
+    "*.{js,ts}": [
+      "prettier-eslint --write",
+      "eslint --fix"
+    ]
+  },
   "main": "index.js",
   "peerDependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
@@ -64,15 +73,18 @@
     "url": "git+https://github.com/gapizza/eslint-config.git"
   },
   "scripts": {
-    "beta": "npm version prerelease && npm publish --tag beta",
+    "beta": "npm run update:packageVersion && ./scripts/publish-beta.sh",
     "commit": "git-cz",
     "lint": "fixpack && prettier-eslint --write && eslint --fix \"**/*.{js,ts}\"",
-    "major": "npm version major && npm publish",
-    "minor": "npm version minor && npm publish",
-    "patch": "npm version patch && npm publish",
+    "lint:ci": "eslint \"**/*.{js,ts}\"",
+    "major": "npm run update:packageVersion && npm version --git-tag-version false major && npm publish && npm run tag",
+    "minor": "npm run update:packageVersion && npm version --git-tag-version false minor && npm publish && npm run tag",
+    "patch": "npm run update:packageVersion && npm version --git-tag-version false patch && npm publish && npm run tag",
     "postpublish": "git push",
     "prepare": "fixpack && husky install",
     "preversion": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tag": "git stash && git tag v\"$(npm view @gapizza/eslint-config version)\" && git push origin --tags",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update:packageVersion": "cat package.json | jq \".version = \\\"$(npm view @gapizza/models version)\\\"\" > package.json"
   }
 }
