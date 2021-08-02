@@ -82,7 +82,6 @@
     "major": "npm run update:packageVersion && npm version --git-tag-version false major && npm publish && npm run tag",
     "minor": "npm run update:packageVersion && npm version --git-tag-version false minor && npm publish && npm run tag",
     "patch": "npm run update:packageVersion && npm version --git-tag-version false patch && npm publish && npm run tag",
-    "postpublish": "git push",
     "prepare": "fixpack && husky install",
     "preversion": "npm run lint",
     "tag": "git stash && git tag v\"$(npm view @gapizza/eslint-config version)\" && git push origin --tags",
