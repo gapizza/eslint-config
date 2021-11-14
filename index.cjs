@@ -109,6 +109,7 @@ module.exports = {
     'unicorn/filename-case': ['error', { cases: { camelCase: true, pascalCase: true } }],
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-array-for-each': 'off',
+    'unicorn/no-array-method-this-argument': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-fn-reference-in-iterator': 'off',
     'unicorn/no-nested-ternary': 'off',
