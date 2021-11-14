@@ -72,8 +72,8 @@
   "scripts": {
     "beta": "npm run update:packageVersion && ./scripts/publish-beta.sh",
     "commit": "git-cz",
-    "lint": "fixpack && prettier-eslint --write && eslint --fix \"**/*.{js,ts}\"",
-    "lint:ci": "eslint \"**/*.{js,ts}\"",
+    "lint": "fixpack && prettier-eslint --write && eslint --fix \"**/*.{cjs,js,ts}\"",
+    "lint:ci": "eslint \"**/*.{cjs,js,ts}\"",
     "lint:pjson": "npmPkgJsonLint .",
     "major": "npm run update:packageVersion && npm version --git-tag-version false major && npm publish && npm run tag",
     "minor": "npm run update:packageVersion && npm version --git-tag-version false minor && npm publish && npm run tag",
