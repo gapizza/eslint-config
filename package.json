@@ -12,8 +12,8 @@
     }
   },
   "devDependencies": {
-    "@gapizza/commitlint-config": "^1.0.3-beta.25f39a2.0",
-    "@gapizza/prettier-config": "^1.0.3-beta.2ca6c33.0",
+    "@gapizza/commitlint-config": "^2.0.0",
+    "@gapizza/prettier-config": "^2.0.0",
     "commitizen": "^4.2.4",
     "commitlint": "^14.1.0",
     "cz-conventional-changelog": "^3.3.0",
