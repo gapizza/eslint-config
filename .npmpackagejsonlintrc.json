@@ -34,6 +34,20 @@
 	"no-archive-devDependencies": "error",
 	"no-file-devDependencies": "error",
 	"no-git-devDependencies": "error",
+	  "no-restricted-pre-release-dependencies": [
+		  "error",
+		  [
+			  "@gapizza/commitlint-config",
+			  "@gapizza/prettier-config"
+		  ]
+	  ],
+	  "no-restricted-pre-release-devDependencies": [
+		  "error",
+		  [
+			  "@gapizza/commitlint-config",
+			  "@gapizza/prettier-config"
+		  ]
+	  ],
 	"name-format": "error",
 	"version-format": "error"
   }
